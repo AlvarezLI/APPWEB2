@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "Auriculares Bluetooth X200",
+    "desc": "Auriculares inalámbricos con cancelación de ruido activa",
+    "precio": 45999.99,
+    "imagen": "auriculares_x200.jpg",
+    "stock": 30,
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Mouse Gamer RGB Optix",
+    "desc": "Mouse óptico con iluminación RGB y 6 botones programables",
+    "precio": 18999.5,
+    "imagen": "mouse_optix.jpg",
+    "stock": 55,
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Teclado Mecánico TK-80",
+    "desc": "Teclado mecánico switches azules, retroiluminado",
+    "precio": 62999.0,
+    "imagen": "teclado_tk80.jpg",
+    "stock": 12,
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Monitor LED 24 pulgadas FullHD",
+    "desc": "Monitor 24'' resolución 1920x1080, 75Hz",
+    "precio": 189999.0,
+    "imagen": "monitor_24_fhd.jpg",
+    "stock": 8,
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Webcam HD Pro 1080p",
+    "desc": "Cámara web con micrófono integrado y enfoque automático",
+    "precio": 34999.99,
+    "imagen": "webcam_hd_pro.jpg",
+    "stock": 0,
+    "disponible": false
+  },
+  {
+    "id": 6,
+    "nombre": "Silla Ergonómica ComfortSit",
+    "desc": "Silla de oficina con soporte lumbar y reposabrazos ajustables",
+    "precio": 145000.0,
+    "imagen": "silla_comfortsit.jpg",
+    "stock": 5,
+    "disponible": true
+  },
+  {
+    "id": 7,
+    "nombre": "Parlante Bluetooth SoundMax",
+    "desc": "Parlante portátil resistente al agua, 12 horas de batería",
+    "precio": 27500.0,
+    "imagen": "parlante_soundmax.jpg",
+    "stock": 20,
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "nombre": "SSD NVMe 1TB SpeedStore",
+    "desc": "Unidad de estado sólido NVMe de 1TB, alta velocidad de lectura/escritura",
+    "precio": 79999.0,
+    "imagen": "ssd_speedstore_1tb.jpg",
+    "stock": 15,
+    "disponible": true
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lucía",
+    "apellido": "Fernández",
+    "email": "lucia.fernandez@example.com",
+    "contraseña": "Lf#2024Secure",
+    "activo": true
+  },
+  {
+    "id": 2,
+    "nombre": "Martín",
+    "apellido": "Gómez",
+    "email": "martin.gomez@example.com",
+    "contraseña": "Mg$Pass2024",
+    "activo": true
+  },
+  {
+    "id": 3,
+    "nombre": "Sofía",
+    "apellido": "Ramírez",
+    "email": "sofia.ramirez@example.com",
+    "contraseña": "Sr!Clave99",
+    "activo": false
+  },
+  {
+    "id": 4,
+    "nombre": "Diego",
+    "apellido": "Torres",
+    "email": "diego.torres@example.com",
+    "contraseña": "Dt2024*key",
+    "activo": true
+  },
+  {
+    "id": 5,
+    "nombre": "Valentina",
+    "apellido": "López",
+    "email": "valentina.lopez@example.com",
+    "contraseña": "Vl_pass2024",
+    "activo": true
+  }
+]

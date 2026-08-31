@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "id_usuario": 1,
+    "fecha": "2026-08-20",
+    "total": 64999.49,
+    "direccion": "Av. Siempre Viva 742, Springfield",
+    "pagado": true,
+    "productos": [1, 2]
+  },
+  {
+    "id": 2,
+    "id_usuario": 2,
+    "fecha": "2026-08-22",
+    "total": 189999.0,
+    "direccion": "Calle San Martín 1234, Rosario",
+    "pagado": true,
+    "productos": [4]
+  },
+  {
+    "id": 3,
+    "id_usuario": 4,
+    "fecha": "2026-08-24",
+    "total": 107499.0,
+    "direccion": "Bv. Illia 500, Córdoba",
+    "pagado": false,
+    "productos": [6, 7]
+  },
+  {
+    "id": 4,
+    "id_usuario": 5,
+    "fecha": "2026-08-25",
+    "total": 62999.0,
+    "direccion": "Ruta 8 Km 45, Pilar",
+    "pagado": true,
+    "productos": [3]
+  },
+  {
+    "id": 5,
+    "id_usuario": 1,
+    "fecha": "2026-08-27",
+    "total": 79999.0,
+    "direccion": "Av. Siempre Viva 742, Springfield",
+    "pagado": true,
+    "productos": [8]
+  },
+  {
+    "id": 6,
+    "id_usuario": 2,
+    "fecha": "2026-08-29",
+    "total": 46499.99,
+    "direccion": "Calle San Martín 1234, Rosario",
+    "pagado": false,
+    "productos": [2, 7]
+  }
+]
