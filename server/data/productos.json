@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "nombre": "Blazer Estructurado",
+    "desc": "Corte italiano en lana fría. Entretela fusionada para una silueta impecable todo el día.",
+    "precio": 89900,
+    "imagen": "img/moda/blazer-estructurado.webp",
+    "categoria": "moda",
+    "etiqueta": "Nuevo",
+    "stock": 12,
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "nombre": "Vestido Lino Natural",
+    "desc": "Tejido de lino 100% lavado a piedra. Caída fluida y transpirable para el verano.",
+    "precio": 67500,
+    "imagen": "img/moda/vestido-lino.webp",
+    "categoria": "moda",
+    "etiqueta": "Destacado",
+    "stock": 8,
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "nombre": "Camisa Oxford",
+    "desc": "Algodón peinado de dos capas, botones de nácar y espalda plisada para mayor libertad.",
+    "precio": 45000,
+    "imagen": "img/moda/camisa-oxford.webp",
+    "categoria": "moda",
+    "etiqueta": "Colección",
+    "stock": 20,
+    "disponible": true
+  },
+  {
+    "id": 4,
+    "nombre": "Pantalón Wool Blend",
+    "desc": "Mezcla de lana virgen y poliéster reciclado. Pinzas frontales y cierre invisible.",
+    "precio": 72000,
+    "imagen": "img/moda/wool-blend.webp",
+    "categoria": "moda",
+    "etiqueta": "Nuevo",
+    "stock": 10,
+    "disponible": true
+  },
+  {
+    "id": 5,
+    "nombre": "Trench Coat Clásico",
+    "desc": "Gabardina de algodón tratado al agua. Forro de acetato y correa regulable en cintura.",
+    "precio": 134000,
+    "imagen": "img/moda/trench-coat.webp",
+    "categoria": "moda",
+    "etiqueta": "Destacado",
+    "stock": 0,
+    "disponible": false
+  },
+  {
+    "id": 6,
+    "nombre": "Camiseta Premium Pima",
+    "desc": "Algodón Pima de fibra extralarga. Cuello redondo reforzado y teñido en prenda para mayor suavidad.",
+    "precio": 28500,
+    "imagen": "img/moda/pima.jpg",
+    "categoria": "moda",
+    "etiqueta": "Colección",
+    "stock": 35,
+    "disponible": true
+  },
+  {
+    "id": 7,
+    "nombre": "Auriculares Inalámbricos",
+    "desc": "Cancelación activa de ruido de 35 dB. Hasta 30 hs de batería y carga rápida USB-C.",
+    "precio": 129900,
+    "imagen": "img/electronica/auriculares.webp",
+    "categoria": "electronica",
+    "etiqueta": "Nuevo",
+    "stock": 15,
+    "disponible": true
+  },
+  {
+    "id": 8,
+    "nombre": "Monitor Ultrawide 34\"",
+    "desc": "Panel IPS curvo 3440×1440, 144 Hz. Cobertura DCI-P3 99% y ajuste completo de altura.",
+    "precio": 459000,
+    "imagen": "img/electronica/ultrawide.webp",
+    "categoria": "electronica",
+    "etiqueta": "Destacado",
+    "stock": 5,
+    "disponible": true
+  },
+  {
+    "id": 9,
+    "nombre": "Teclado Mecánico",
+    "desc": "Switches lineales de 45 g de actuación. Retroiluminación RGB por tecla y cuerpo de aluminio.",
+    "precio": 87500,
+    "imagen": "img/electronica/teclado.jpg",
+    "categoria": "electronica",
+    "etiqueta": "Colección",
+    "stock": 18,
+    "disponible": true
+  },
+  {
+    "id": 10,
+    "nombre": "Mouse Ergonómico Pro",
+    "desc": "Sensor óptico de 25.600 DPI, 7 botones programables y reposamuñecas desmontable.",
+    "precio": 54000,
+    "imagen": "img/electronica/mouse.jpg",
+    "categoria": "electronica",
+    "etiqueta": "Nuevo",
+    "stock": 25,
+    "disponible": true
+  },
+  {
+    "id": 11,
+    "nombre": "Hub USB-C 10 en 1",
+    "desc": "HDMI 4K, Ethernet 1 Gbps, SD/MicroSD, 3× USB-A y entrega de potencia 100 W passthrough.",
+    "precio": 38900,
+    "imagen": "img/electronica/usb.jpg",
+    "categoria": "electronica",
+    "etiqueta": "Colección",
+    "stock": 30,
+    "disponible": true
+  },
+  {
+    "id": 12,
+    "nombre": "Cámara Mirrorless",
+    "desc": "Sensor APS-C de 26 MP, estabilización en 5 ejes y grabación en 4K/60fps. Cuerpo compacto.",
+    "precio": 698000,
+    "imagen": "img/electronica/camara.jpg",
+    "categoria": "electronica",
+    "etiqueta": "Destacado",
+    "stock": 3,
+    "disponible": true
+  },
+  {
+    "id": 13,
+    "nombre": "Lámpara de Piso Arco",
+    "desc": "Estructura de acero mate con pantalla articulada. Altura regulable de 160 a 195 cm.",
+    "precio": 154000,
+    "imagen": "img/hogar/lampara.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Nuevo",
+    "stock": 6,
+    "disponible": true
+  },
+  {
+    "id": 14,
+    "nombre": "Cojín Boucle Natural",
+    "desc": "Tejido boucle de lana reciclada. Relleno de fibra hollow siliconada. Cierre invisible.",
+    "precio": 28900,
+    "imagen": "img/hogar/cojin.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Colección",
+    "stock": 40,
+    "disponible": true
+  },
+  {
+    "id": 15,
+    "nombre": "Jarrón Cerámica Mate",
+    "desc": "Torneado a mano en grés de alta temperatura. Esmalte mate en tonos naturales únicos.",
+    "precio": 42500,
+    "imagen": "img/hogar/jarron.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Destacado",
+    "stock": 14,
+    "disponible": true
+  },
+  {
+    "id": 16,
+    "nombre": "Bandeja Mármol Blanco",
+    "desc": "Mármol Carrara pulido a espejo. Bordes biselados y pies de goma antideslizantes.",
+    "precio": 56000,
+    "imagen": "img/hogar/bandeja.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Nuevo",
+    "stock": 9,
+    "disponible": true
+  },
+  {
+    "id": 17,
+    "nombre": "Espejo Oval Ratán",
+    "desc": "Marco tejido a mano en ratán natural. Cristal de 5 mm sin distorsión. Incluye instalación.",
+    "precio": 98000,
+    "imagen": "img/hogar/espejo.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Destacado",
+    "stock": 4,
+    "disponible": true
+  },
+  {
+    "id": 18,
+    "nombre": "Set Copas Borosilicato",
+    "desc": "Set de 4 copas en vidrio borosilicato resistente al calor. Volumen de 400 ml cada una.",
+    "precio": 34500,
+    "imagen": "img/hogar/copas.jpg",
+    "categoria": "hogar",
+    "etiqueta": "Colección",
+    "stock": 22,
+    "disponible": true
+  }
+]

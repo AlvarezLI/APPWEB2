@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUVEA — Carrito</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (generado por navbar.js) -->
+  <nav class="navbar"></nav>
+
+  <main>
+    <section class="cart-section">
+      <div class="container">
+        <p class="section-label">Mi carrito</p>
+
+        <div id="cartEmpty" class="cart-empty" style="display:none">
+          <p>Tu carrito está vacío.</p>
+          <a href="productos.html" class="hero-cta">Ir a la tienda</a>
+        </div>
+
+        <div id="cartTable" class="cart-table-wrap" style="display:none">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Subtotal</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cartItems"></tbody>
+          </table>
+
+          <div class="cart-footer">
+            <div class="cart-total-row">
+              <span>Total</span>
+              <span id="cartTotal">$0</span>
+            </div>
+          </div>
+
+          <!-- Checkout: la página completa requiere sesión (ver guardAuth() en cart.js) -->
+          <form id="checkoutForm" class="checkout" novalidate>
+            <div class="form-field">
+              <label class="form-label" for="direccion">Dirección de envío</label>
+              <input class="form-input" type="text" id="direccion" placeholder="Calle, número, ciudad" required autocomplete="street-address" />
+            </div>
+            <button type="submit" class="btn-submit">Finalizar compra</button>
+            <p class="form-error" id="checkoutError"></p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-brand">Nuvea</span>
+    <span>&copy; 2026 NUVEA. Todos los derechos reservados.</span>
+  </footer>
+
+  <!-- MODAL DE COMPRA EXITOSA -->
+  <div class="modal-overlay" id="successModal" aria-modal="true" role="dialog">
+    <div class="modal">
+      <div class="modal-check" aria-hidden="true">&#10003;</div>
+      <h2 class="modal-title">¡Compra realizada!</h2>
+      <p class="modal-body">
+        Orden <strong id="orderId"></strong><br/>
+        Total: <strong id="orderTotal"></strong>
+      </p>
+      <a href="compras.html" class="modal-btn">Ver mis compras</a>
+    </div>
+  </div>
+
+  <script type="module" src="../js/pages/cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUVEA — Productos</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (generado por navbar.js) -->
+  <nav class="navbar"></nav>
+
+  <main>
+
+    <section class="cat-hero container">
+      <p class="cat-hero-store">NUVEA · Tienda</p>
+      <h1 class="cat-hero-title">Todos los productos</h1>
+      <p class="cat-hero-sub">
+        Explorá la colección completa y filtrá por categoría, nombre o disponibilidad.
+      </p>
+    </section>
+
+    <section class="products-section">
+      <div class="container">
+
+        <div class="filters">
+          <div class="chips" role="group" aria-label="Filtrar por categoría">
+            <button type="button" class="chip" data-categoria="">Todas</button>
+            <button type="button" class="chip" data-categoria="moda">Moda</button>
+            <button type="button" class="chip" data-categoria="electronica">Electrónica</button>
+            <button type="button" class="chip" data-categoria="hogar">Hogar</button>
+          </div>
+
+          <form id="filtersForm" class="filters-search">
+            <input class="form-input" type="search" id="texto" placeholder="Buscar por nombre o descripción" />
+            <button type="submit" class="chip">Buscar</button>
+          </form>
+
+          <label class="filters-check">
+            <input type="checkbox" id="soloDisponibles" />
+            Solo disponibles
+          </label>
+        </div>
+
+        <p class="section-label" id="resultsCount">Productos</p>
+
+        <!-- Cards generadas por productCard.js -->
+        <div class="products-grid"></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-brand">Nuvea</span>
+    <span>&copy; 2026 NUVEA. Todos los derechos reservados.</span>
+  </footer>
+
+  <script type="module" src="../js/pages/productos.js"></script>
+
+</body>
+</html>

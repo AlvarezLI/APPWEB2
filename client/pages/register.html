@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUVEA — Crear cuenta</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <svg class="nav-logo" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="28" height="28" rx="3" fill="#1A1917"/><path d="M7 8v12M7 8l14 12M21 8v12" stroke="#FAFAF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-brand-name">uvea</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="moda.html">Moda</a></li>
+      <li><a href="electronica.html">Electrónica</a></li>
+      <li><a href="hogar.html">Hogar</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="login.html" class="btn-logout">Iniciar sesión</a>
+  </nav>
+
+  <main>
+    <div class="auth-wrap">
+
+      <!-- Visual panel (izquierda en desktop) -->
+      <div class="auth-visual" aria-hidden="true">
+        <p class="auth-visual-text">
+          Creá<br/>
+          tu cuenta<br/>
+          Nuvea
+        </p>
+      </div>
+
+      <!-- Form panel -->
+      <div class="auth-panel">
+        <div class="auth-form-wrap">
+
+          <p class="auth-eyebrow">Nueva cuenta</p>
+          <h1 class="auth-title">Registrarse</h1>
+          <p class="auth-subtitle">Completá el formulario para crear tu cuenta.</p>
+
+          <form id="registerForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="nombre">Nombre</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Juan"
+                  required
+                  autocomplete="given-name"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="apellido">Apellido</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="apellido"
+                  name="apellido"
+                  placeholder="Pérez"
+                  required
+                  autocomplete="family-name"
+                />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="email">Correo electrónico</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@correo.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="password">Contraseña</label>
+              <input
+                class="form-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Mínimo 8 caracteres"
+                minlength="8"
+                required
+                autocomplete="new-password"
+              />
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="fechaNacimiento">Fecha de nacimiento</label>
+              <input
+                class="form-input"
+                type="date"
+                id="fechaNacimiento"
+                name="fechaNacimiento"
+                required
+                autocomplete="bday"
+              />
+            </div>
+
+            <button type="submit" class="btn-submit">Crear cuenta</button>
+
+            <p class="form-error" id="registerError"></p>
+
+          </form>
+
+          <div class="form-divider"></div>
+
+          <p class="auth-footer">
+            ¿Ya tenés cuenta?
+            <a href="login.html">Iniciar sesión</a>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL DE ÉXITO -->
+  <div class="modal-overlay" id="successModal" aria-modal="true" role="dialog">
+    <div class="modal">
+      <div class="modal-check" aria-hidden="true">&#10003;</div>
+      <h2 class="modal-title">¡Cuenta creada!</h2>
+      <p class="modal-body">
+        Tu cuenta fue creada exitosamente.<br/>
+        Ahora podés iniciar sesión con tus datos.
+      </p>
+      <a href="login.html" class="modal-btn">Ir a iniciar sesión</a>
+    </div>
+  </div>
+
+  <script type="module" src="../js/pages/register.js"></script>
+
+</body>
+</html>

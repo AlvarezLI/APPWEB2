@@ -5,6 +5,7 @@
     "apellido": "Fernández",
     "email": "lucia.fernandez@example.com",
     "contraseña": "Lf#2024Secure",
+    "fechaNacimiento": "1995-04-12",
     "activo": true
   },
   {
@@ -13,6 +14,7 @@
     "apellido": "Gómez",
     "email": "martin.gomez@example.com",
     "contraseña": "Mg$Pass2024",
+    "fechaNacimiento": "1988-11-03",
     "activo": true
   },
   {
@@ -21,6 +23,7 @@
     "apellido": "Ramírez",
     "email": "sofia.ramirez@example.com",
     "contraseña": "Sr!Clave99",
+    "fechaNacimiento": "2000-01-27",
     "activo": false
   },
   {
@@ -29,6 +32,7 @@
     "apellido": "Torres",
     "email": "diego.torres@example.com",
     "contraseña": "Dt2024*key",
+    "fechaNacimiento": "1992-07-19",
     "activo": true
   },
   {
@@ -37,6 +41,7 @@
     "apellido": "López",
     "email": "valentina.lopez@example.com",
     "contraseña": "Vl_pass2024",
+    "fechaNacimiento": "1998-09-08",
     "activo": true
   }
 ]

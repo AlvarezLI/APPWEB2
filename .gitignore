@@ -1,0 +1,13 @@
+# Dependencias de Node.js
+node_modules/
+
+# Directorio de dependencias generadas por npm
+package-lock.json
+
+# Variables de entorno (contienen el secret de JWT y la URI de MongoDB)
+.env
+
+# Editores / SO
+.idea/
+.vscode/
+.DS_Store

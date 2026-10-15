@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NUVEA — Tienda Premium</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (generado por navbar.js) -->
+  <nav class="navbar"></nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-eyebrow">Colección 2026</p>
+      <h1 class="hero-title">Lo esencial, <em>refinado</em></h1>
+      <p class="hero-subtitle">
+        Una selección curada de productos premium para quienes valoran la calidad sobre la cantidad.
+      </p>
+      <a href="productos.html" class="hero-cta">Explorar colección</a>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories-section">
+      <div class="container">
+        <p class="section-label">Categorías</p>
+
+        <div class="categories-grid">
+
+          <a href="moda.html" class="category-card">
+            <span class="cat-num">01</span>
+            <h2 class="cat-title">Moda</h2>
+            <span class="cat-tag">Ropa &amp; Estilo</span>
+            <p class="cat-desc">
+              Piezas atemporales seleccionadas para una guardarropa consciente y refinada.
+            </p>
+            <span class="cat-arrow">&#8594;</span>
+          </a>
+
+          <a href="electronica.html" class="category-card">
+            <span class="cat-num">02</span>
+            <h2 class="cat-title">Electrónica</h2>
+            <span class="cat-tag">Tecnología &amp; Dispositivos</span>
+            <p class="cat-desc">
+              Hardware y accesorios tech de alta gama para la productividad y el entretenimiento.
+            </p>
+            <span class="cat-arrow">&#8594;</span>
+          </a>
+
+          <a href="hogar.html" class="category-card">
+            <span class="cat-num">03</span>
+            <h2 class="cat-title">Hogar</h2>
+            <span class="cat-tag">Diseño &amp; Decoración</span>
+            <p class="cat-desc">
+              Objetos y muebles que elevan cada espacio con diseño contemporáneo y materiales nobles.
+            </p>
+            <span class="cat-arrow">&#8594;</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Destacados (3 productos por categoría traídos con fetch) -->
+    <section class="products-section">
+      <div class="container">
+        <p class="section-label">Destacados</p>
+        <div class="featured-grid products-grid"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-brand">Nuvea</span>
+    <span>&copy; 2026 NUVEA. Todos los derechos reservados.</span>
+  </footer>
+
+  <script type="module" src="../js/pages/index.js"></script>
+
+</body>
+</html>
