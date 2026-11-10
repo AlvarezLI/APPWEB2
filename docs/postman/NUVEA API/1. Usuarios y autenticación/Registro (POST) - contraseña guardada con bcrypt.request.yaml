@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{baseUrl}}/usuarios/registro"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Postman",
+      "apellido": "Test",
+      "email": "{{email}}",
+      "contraseña": "{{password}}",
+      "fechaNacimiento": "2000-01-15"
+    }
+auth:
+  type: noauth
+scripts:
+  - type: beforeRequest
+    code: |-
+      // Email distinto en cada corrida: evita el 409 si quedó un usuario de una corrida anterior
+      pm.collectionVariables.set('email', 'postman.' + Date.now() + '@example.com');
+    language: text/javascript
+  - type: afterResponse
+    code: |-
+      pm.test('Status 201', () => pm.response.to.have.status(201));
+      pm.test('No devuelve la contraseña', () => pm.expect(pm.response.json()).to.not.have.property('contraseña'));
+      pm.collectionVariables.set('usuarioId', pm.response.json()._id);
+    language: text/javascript
+order: 1000

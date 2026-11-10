@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{baseUrl}}/productos/buscar"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "texto": "a",
+      "precioMax": 500000,
+      "soloDisponibles": true
+    }
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: pm.test('Status 200', () => pm.response.to.have.status(200));
+    language: text/javascript
+order: 3000

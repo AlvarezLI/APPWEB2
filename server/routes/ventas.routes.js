@@ -25,8 +25,9 @@ async function devolverStock(items) {
   }
 }
 
+// Cada usuario solo accede a sus propias ventas (el token identifica al comprador)
 router.get('/', async (req, res) => {
-  const ventas = await Venta.find().populate(POPULATE).sort({ fecha: -1 });
+  const ventas = await Venta.find({ usuario: req.usuario.id }).populate(POPULATE).sort({ fecha: -1 });
   res.status(200).json(ventas);
 });
 
@@ -36,7 +37,7 @@ router.get('/usuario/:idUsuario', validarId('idUsuario'), soloPropietario('idUsu
 });
 
 router.get('/:id', validarId(), async (req, res) => {
-  const venta = await Venta.findById(req.params.id).populate(POPULATE);
+  const venta = await buscarVentaPropia(req.params.id, req.usuario.id).populate(POPULATE);
   if (!venta) return noEncontrado(res, 'Venta');
   res.status(200).json(venta);
 });

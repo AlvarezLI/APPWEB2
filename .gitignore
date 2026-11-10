@@ -11,3 +11,19 @@ package-lock.json
 .idea/
 .vscode/
 .DS_Store
+
+# Metadatos del workspace de Postman (la colección vive en docs/postman)
+/.postman/
+/postman/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Archivos del sistema operativo
+Thumbs.db
+desktop.ini
+
+# Archivos temporales
+*.tmp
+*.bak

@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{baseUrl}}/productos"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Producto Postman",
+      "desc": "Producto de prueba",
+      "precio": 1500,
+      "categoria": "hogar",
+      "imagen": "img/hogar/lampara.jpg",
+      "stock": 10
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status 201', () => pm.response.to.have.status(201));
+      pm.collectionVariables.set('productoId', pm.response.json()._id);
+    language: text/javascript
+order: 4000

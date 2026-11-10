@@ -1,0 +1,27 @@
+$kind: http-request
+name: Comprar más stock del disponible -> 409
+url: "{{baseUrl}}/ventas"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "direccion": "Av. Siempre Viva 742",
+      "productos": [
+        {
+          "producto": "{{productoId}}",
+          "cantidad": 999
+        }
+      ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+scripts:
+  - type: afterResponse
+    code: pm.test('Status 409', () => pm.response.to.have.status(409));
+    language: text/javascript
+order: 2000

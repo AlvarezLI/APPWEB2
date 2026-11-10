@@ -1,0 +1,10 @@
+$kind: collection
+description: 'Pruebas de la API de NUVEA (Express + MongoDB + JWT + bcrypt). Ejecutar con "Run collection" en orden: crea un usuario, un producto y una compra de prueba, prueba la autenticación y limpia al final. [token] = ruta protegida con JWT.'
+variables:
+  baseUrl: http://localhost:3000/api
+  email: postman.test@example.com
+  password: Postman2024!
+  token: ""
+  usuarioId: ""
+  productoId: ""
+  ventaId: ""

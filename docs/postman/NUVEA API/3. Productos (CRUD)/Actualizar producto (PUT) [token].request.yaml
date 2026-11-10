@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/productos/{{productoId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "precio": 1800
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{token}}"
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status 200', () => pm.response.to.have.status(200));
+      pm.test('Precio actualizado', () => pm.expect(pm.response.json().precio).to.eql(1800));
+    language: text/javascript
+order: 6000

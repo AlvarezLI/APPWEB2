@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{baseUrl}}/usuarios/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "{{email}}",
+      "contraseña": "{{password}}"
+    }
+auth:
+  type: noauth
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test('Status 200', () => pm.response.to.have.status(200));
+      pm.test('Devuelve token', () => pm.expect(pm.response.json().token).to.be.a('string'));
+      pm.collectionVariables.set('token', pm.response.json().token);
+    language: text/javascript
+order: 5000
