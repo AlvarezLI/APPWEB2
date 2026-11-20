@@ -4,6 +4,7 @@
 
 - Repositorio: https://github.com/AlvarezLI/APPWEB2
 - Video explicativo: https://drive.google.com/drive/folders/1uvM7AaA52c122FkrnHUukZtMmztObiQQ?usp=sharing
+- Publicación (GitHub Pages): la tienda está en https://alvarezli.github.io/APPWEB2/client/, ver la sección [Deploy](#deploy)
 
 
 Tienda online con tres categorías (Moda, Electrónica y Hogar). El proyecto es un **monorepo**: el servidor (server/, Express + MongoDB) y el cliente (client/, HTML + CSS + JS con módulos) están en el mismo repositorio, y el servidor también entrega el front-end.
@@ -50,6 +51,12 @@ npm run dev               # o npm start
 Abrir **http://localhost:3000** (redirige a /pages/index.html). La API responde en http://localhost:3000/api.
 
 También se puede abrir client/ con Live Server: el cliente apunta a http://localhost:3000/api y el servidor tiene CORS habilitado.
+
+### Deploy
+
+El front-end está publicado con GitHub Pages desde la rama main. La raíz (https://alvarezli.github.io/APPWEB2/) muestra este README y la tienda se abre desde https://alvarezli.github.io/APPWEB2/client/.
+
+GitHub Pages solo sirve archivos estáticos, así que no puede ejecutar el servidor de Node ni conectarse a MongoDB. El cliente sigue apuntando a http://localhost:3000/api, por lo que para ver productos, iniciar sesión y comprar desde la versión publicada hay que tener el servidor corriendo localmente (pasos de arriba). Sin el servidor la página carga, pero muestra el error de conexión.
 
 ### Usuarios de prueba (cargados por el seed)
 
